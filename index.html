@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#f6f1e8" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
-  <meta name="description" content="Morpheus - ένας ήσυχος, καθαρός και καλά εκπαιδευμένος γάτος εσωτερικού χώρου που αναζητά ένα μακροχρόνιο σπίτι στην Ελλάδα μαζί με τη Mihaela." />
-  <title>Morpheus | Προφίλ Ενοίκου</title>
+  <meta name="description" content="Morpheus - a quiet, clean and well-trained indoor cat looking for a long-term home in Greece with his human." />
+  <title>Morpheus | Tenant Profile</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
@@ -16,189 +16,151 @@
   <div id="paw-layer" aria-hidden="true"></div>
 
   <header class="topbar">
-    <a class="brand" href="#top" aria-label="Αρχική Morpheus">
+    <a class="brand" href="#top" aria-label="Morpheus home">
       <span class="brand-paw">🐾</span>
       <span>Morpheus</span>
     </a>
-    <div class="lang-switch" role="group" aria-label="Γλώσσα">
-      <button class="lang-btn active" type="button">GR</button>
+
+    <div class="lang-switch" role="group" aria-label="Language selector">
+      <button class="lang-btn active" data-lang="el" type="button">GR</button>
+      <button class="lang-btn" data-lang="en" type="button">EN</button>
     </div>
   </header>
 
   <main id="top">
     <section class="hero section-shell">
       <div class="hero-copy reveal">
-        <p class="eyebrow">ΠΡΟΦΙΛ ΕΝΟΙΚΟΥ · ΕΛΛΑΔΑ</p>
+        <p class="eyebrow" data-i18n="heroEyebrow">ΠΡΟΦΙΛ ΕΝΟΙΚΟΥ · ΕΛΛΑΔΑ</p>
         <h1>Morpheus</h1>
-        <p class="hero-subtitle">Ένοικος διαμερίσματος. Γάτος εσωτερικού χώρου. Πέντε χρόνια εξαιρετικής οικιακής ιστορίας.</p>
+        <p class="hero-subtitle" data-i18n="heroSubtitle">Ένοικος διαμερίσματος. Γάτος εσωτερικού χώρου. Πέντε χρόνια εξαιρετικής οικιακής ιστορίας.</p>
 
-        <div class="status-row" aria-label="Κατάσταση Morpheus">
-          <span>✓ Εκπαιδευμένος στην άμμο</span>
-          <span>✓ Ήσυχος</span>
-          <span>✓ Στειρωμένος</span>
-          <span>✓ Μόνο εντός σπιτιού</span>
+        <div class="status-row" aria-label="Morpheus status">
+          <span data-i18n="tagLitter">✓ Εκπαιδευμένος στην άμμο</span>
+          <span data-i18n="tagQuiet">✓ Ήσυχος</span>
+          <span data-i18n="tagNeutered">✓ Στειρωμένος</span>
+          <span data-i18n="tagIndoor">✓ Μόνο εντός σπιτιού</span>
         </div>
 
-        <p class="hero-note">Αναζητά ένα μακροχρόνιο σπίτι στην Ελλάδα μαζί με τη Mihaela.</p>
+        <p class="hero-note" data-i18n="heroNote">Αναζητά ένα μακροχρόνιο σπίτι στην Ελλάδα μαζί με τη Mihaela.</p>
 
         <div class="hero-actions">
           <a class="btn btn-primary" href="Morpheus-Tenant-CV-GR.html" target="_blank" rel="noopener">
-            <span>Δείτε το βιογραφικό ενοίκου</span>
+            <span data-i18n="cvButton">Δείτε το βιογραφικό ενοίκου</span>
             <span aria-hidden="true">↗</span>
           </a>
-          <a class="btn btn-secondary" href="#about">Γνωρίστε τον Morpheus</a>
+          <a class="btn btn-secondary" href="#about" data-i18n="meetButton">Γνωρίστε τον Morpheus</a>
         </div>
       </div>
 
       <div class="hero-image-wrap reveal reveal-delay">
         <div class="hero-image-card">
-          <img src="https://raw.githubusercontent.com/michaelaspice/morpheus-profile/main/morpheus-hero.jpeg" alt="Ο Morpheus κάθεται ήρεμα στο φως" />
-          <div class="hero-stamp">ΕΓΚΕΚΡΙΜΕΝΟΣ ΓΙΑ ΔΙΑΜΕΡΙΣΜΑ</div>
+          <img src="https://raw.githubusercontent.com/michaelaspice/morpheus-profile/main/morpheus-hero.jpeg" alt="Morpheus sitting calmly in sunlight" />
+          <div class="hero-stamp" data-i18n="stamp">ΕΓΚΕΚΡΙΜΕΝΟΣ ΓΙΑ ΔΙΑΜΕΡΙΣΜΑ</div>
         </div>
         <div class="floating-note">
           <span class="note-dot"></span>
-          <span>Δεν έχουν αναφερθεί θύματα μεταξύ των επίπλων.</span>
+          <span data-i18n="floatingNote">Δεν έχουν αναφερθεί θύματα μεταξύ των επίπλων.</span>
         </div>
       </div>
     </section>
 
     <section class="quick-facts section-shell reveal" aria-labelledby="facts-title">
       <div class="section-heading compact">
-        <p class="eyebrow">ΤΑ ΒΑΣΙΚΑ</p>
-        <h2 id="facts-title">Μικρός ένοικος. Ισχυρές συστάσεις.</h2>
+        <p class="eyebrow" data-i18n="factsEyebrow">ΤΑ ΒΑΣΙΚΑ</p>
+        <h2 id="facts-title" data-i18n="factsTitle">Μικρός ένοικος. Ισχυρές συστάσεις.</h2>
       </div>
 
       <div class="facts-grid">
-        <article class="fact-card"><span class="fact-value">15.07.2021</span><span class="fact-label">Ημερομηνία γέννησης</span></article>
-        <article class="fact-card"><span class="fact-value">3</span><span class="fact-label">Σπίτια</span></article>
-        <article class="fact-card"><span class="fact-value">3</span><span class="fact-label">Χώρες</span></article>
-        <article class="fact-card"><span class="fact-value">0</span><span class="fact-label">Ζημιές σε έπιπλα</span></article>
-        <article class="fact-card"><span class="fact-value">0</span><span class="fact-label">Παράπονα θορύβου</span></article>
-        <article class="fact-card"><span class="fact-value">100%</span><span class="fact-label">Ακρίβεια αμμολεκάνης</span></article>
+        <article class="fact-card"><span class="fact-value">15.07.2021</span><span class="fact-label" data-i18n="factBorn">Ημερομηνία γέννησης</span></article>
+        <article class="fact-card"><span class="fact-value">3</span><span class="fact-label" data-i18n="factHomes">Σπίτια</span></article>
+        <article class="fact-card"><span class="fact-value">3</span><span class="fact-label" data-i18n="factCountries">Χώρες</span></article>
+        <article class="fact-card"><span class="fact-value">0</span><span class="fact-label" data-i18n="factDamage">Ζημιές σε έπιπλα</span></article>
+        <article class="fact-card"><span class="fact-value">0</span><span class="fact-label" data-i18n="factComplaints">Παράπονα θορύβου</span></article>
+        <article class="fact-card"><span class="fact-value">100%</span><span class="fact-label" data-i18n="factLitter">Ακρίβεια αμμολεκάνης</span></article>
       </div>
     </section>
 
     <section id="about" class="about section-shell">
       <div class="about-photo reveal">
-        <img src="https://raw.githubusercontent.com/michaelaspice/morpheus-profile/main/morpheus-portrait.jpeg" alt="Ο Morpheus χαλαρώνει σε κρεβάτι" />
+        <img src="https://raw.githubusercontent.com/michaelaspice/morpheus-profile/main/morpheus-portrait.jpeg" alt="Morpheus relaxing on a bed" />
       </div>
       <div class="about-copy reveal reveal-delay">
-        <p class="eyebrow">ΣΧΕΤΙΚΑ ΜΕ ΤΟΝ MORPHEUS</p>
-        <h2>Μεγάλωσε για τη ζωή σε διαμέρισμα.</h2>
-        <p>Ο Morpheus υιοθετήθηκε ως γατάκι τον Νοέμβριο του 2021 και από τότε ζει μαζί μου. Είναι στειρωμένος, πλήρως εμβολιασμένος, αποκλειστικά γάτος εσωτερικού χώρου και είναι εξαιρετικά καθαρός, ήσυχος και καλά εκπαιδευμένος.</p>
-        <p>Τα τελευταία πέντε χρόνια έχουμε ζήσει μαζί σε τρία σπίτια στην Ελλάδα, το Ηνωμένο Βασίλειο και την Ιταλία. Είναι συνηθισμένος στις μετακομίσεις, προσαρμόζεται σε νέους χώρους και σέβεται το σπίτι γύρω του.</p>
-        <p>Στην αρχή είναι λίγο ντροπαλός με νέους ανθρώπους, αλλά μόλις νιώσει ασφαλής γίνεται γλυκός, ήρεμος και τρυφερός. Το αγαπημένο του καθημερινό πρόγραμμα είναι ύπνος, φαγητό και παρατήρηση πουλιών από το παράθυρο.</p>
+        <p class="eyebrow" data-i18n="aboutEyebrow">ΣΧΕΤΙΚΑ ΜΕ ΤΟΝ MORPHEUS</p>
+        <h2 data-i18n="aboutTitle">Μεγάλωσε για τη ζωή σε διαμέρισμα.</h2>
+        <p data-i18n="aboutP1">Ο Morpheus υιοθετήθηκε ως γατάκι τον Νοέμβριο του 2021 και από τότε ζει μαζί μου. Είναι στειρωμένος, πλήρως εμβολιασμένος, αποκλειστικά γάτος εσωτερικού χώρου και είναι εξαιρετικά καθαρός, ήσυχος και καλά εκπαιδευμένος.</p>
+        <p data-i18n="aboutP2">Τα τελευταία πέντε χρόνια έχουμε ζήσει μαζί σε τρία σπίτια στην Ελλάδα, το Ηνωμένο Βασίλειο και την Ιταλία. Είναι συνηθισμένος στις μετακομίσεις, προσαρμόζεται σε νέους χώρους και σέβεται το σπίτι γύρω του.</p>
+        <p data-i18n="aboutP3">Στην αρχή είναι λίγο ντροπαλός με νέους ανθρώπους, αλλά μόλις νιώσει ασφαλής γίνεται γλυκός, ήρεμος και τρυφερός. Το αγαπημένο του καθημερινό πρόγραμμα είναι ύπνος, φαγητό και παρατήρηση πουλιών από το παράθυρο.</p>
       </div>
     </section>
 
     <section class="reassurance section-shell">
       <div class="section-heading reveal">
-        <p class="eyebrow">ΓΙΑ ΤΗΝ ΗΡΕΜΙΑ ΤΟΥ ΙΔΙΟΚΤΗΤΗ</p>
-        <h2>Όλα έχουν τη θέση τους. Και ο Morpheus επίσης.</h2>
-        <p>Η καθημερινότητά του είναι οργανωμένη έτσι ώστε το σπίτι να παραμένει καθαρό, ήσυχο και προστατευμένο.</p>
+        <p class="eyebrow" data-i18n="careEyebrow">ΓΙΑ ΤΗΝ ΗΡΕΜΙΑ ΤΟΥ ΙΔΙΟΚΤΗΤΗ</p>
+        <h2 data-i18n="careTitle">Όλα έχουν τη θέση τους. Και ο Morpheus επίσης.</h2>
+        <p data-i18n="careIntro">Η καθημερινότητά του είναι οργανωμένη έτσι ώστε το σπίτι να παραμένει καθαρό, ήσυχο και προστατευμένο.</p>
       </div>
 
       <div class="care-grid">
-        <article class="care-card reveal">
-          <div class="care-icon">◇</div>
-          <h3>Καθαριότητα & φροντίδα</h3>
-          <p>Χρησιμοποιεί αποκλειστικά κλειστή αμμολεκάνη, έχει δικό του σημείο φαγητού με σιλικονούχο χαλάκι, τρέφεται με ποιοτική τροφή και περιποιείται τακτικά.</p>
-        </article>
-        <article class="care-card reveal">
-          <div class="care-icon">⌂</div>
-          <h3>Προστασία του σπιτιού</h3>
-          <p>Χρησιμοποιεί το δικό του ονυχοδρόμιο και δεν ενδιαφέρεται για έπιπλα, κουρτίνες, πόρτες ή τοίχους. Τα έπιπλα σε όλα τα σπίτια μας έχουν παραμείνει άθικτα.</p>
-        </article>
-        <article class="care-card reveal">
-          <div class="care-icon">☾</div>
-          <h3>Ήρεμη συμπεριφορά</h3>
-          <p>Είναι ήσυχος στο σπίτι, δεν κυκλοφορεί έξω και περνά το μεγαλύτερο μέρος του χρόνου κοιμώμενος, χαλαρώνοντας ή παρατηρώντας πουλιά. Κανένα παράπονο θορύβου. Ποτέ.</p>
-        </article>
-        <article class="care-card reveal">
-          <div class="care-icon">♡</div>
-          <h3>Υπεύθυνη φροντίδα</h3>
-          <p>Έχω μεγαλώσει και εκπαιδεύσει τον Morpheus από τότε που ήταν γατάκι και αναλαμβάνω πλήρως την ευθύνη για τη φροντίδα, την καθαριότητα και τη συμπεριφορά του.</p>
-        </article>
+        <article class="care-card reveal"><div class="care-icon">◇</div><h3 data-i18n="cleanTitle">Καθαριότητα & φροντίδα</h3><p data-i18n="cleanText">Χρησιμοποιεί αποκλειστικά κλειστή αμμολεκάνη, έχει δικό του σημείο φαγητού με σιλικονούχο χαλάκι, τρέφεται με ποιοτική τροφή και περιποιείται τακτικά.</p></article>
+        <article class="care-card reveal"><div class="care-icon">⌂</div><h3 data-i18n="propertyTitle">Προστασία του σπιτιού</h3><p data-i18n="propertyText">Χρησιμοποιεί το δικό του ονυχοδρόμιο και δεν ενδιαφέρεται για έπιπλα, κουρτίνες, πόρτες ή τοίχους. Τα έπιπλα σε όλα τα σπίτια μας έχουν παραμείνει άθικτα.</p></article>
+        <article class="care-card reveal"><div class="care-icon">☾</div><h3 data-i18n="behaviourTitle">Ήρεμη συμπεριφορά</h3><p data-i18n="behaviourText">Είναι ήσυχος στο σπίτι, δεν κυκλοφορεί έξω και περνά το μεγαλύτερο μέρος του χρόνου κοιμώμενος, χαλαρώνοντας ή παρατηρώντας πουλιά. Κανένα παράπονο θορύβου. Ποτέ.</p></article>
+        <article class="care-card reveal"><div class="care-icon">♡</div><h3 data-i18n="ownerTitle">Υπεύθυνη φροντίδα</h3><p data-i18n="ownerText">Έχω μεγαλώσει και εκπαιδεύσει τον Morpheus από τότε που ήταν γατάκι και αναλαμβάνω πλήρως την ευθύνη για τη φροντίδα, την καθαριότητα και τη συμπεριφορά του.</p></article>
       </div>
     </section>
 
     <section class="rental-record section-shell reveal">
       <div class="record-card">
-        <div class="record-copy">
-          <p class="eyebrow">ΙΣΤΟΡΙΚΟ ΚΑΤΟΙΚΙΑΣ</p>
-          <h2>Πέντε χρόνια. Τρία σπίτια. Μηδέν δράμα.</h2>
-          <p>Ελλάδα → Ηνωμένο Βασίλειο → Ιταλία. Επιπλωμένα σπίτια, υφασμάτινα έπιπλα και χαλιά συμπεριλαμβάνονται.</p>
-        </div>
+        <div class="record-copy"><p class="eyebrow" data-i18n="recordEyebrow">ΙΣΤΟΡΙΚΟ ΚΑΤΟΙΚΙΑΣ</p><h2 data-i18n="recordTitle">Πέντε χρόνια. Τρία σπίτια. Μηδέν δράμα.</h2><p data-i18n="recordText">Ελλάδα → Ηνωμένο Βασίλειο → Ιταλία. Επιπλωμένα σπίτια, υφασμάτινα έπιπλα και χαλιά συμπεριλαμβάνονται.</p></div>
         <div class="record-list">
-          <div><span>Ζημιές στο ακίνητο</span><strong>0</strong></div>
-          <div><span>Παράπονα θορύβου</span><strong>0</strong></div>
-          <div><span>Εξώσεις</span><strong>0</strong></div>
-          <div><span>Καθυστερήσεις ενοικίου</span><strong>Δεν είναι το τμήμα μου</strong></div>
+          <div><span data-i18n="recordDamage">Ζημιές στο ακίνητο</span><strong>0</strong></div>
+          <div><span data-i18n="recordNoise">Παράπονα θορύβου</span><strong>0</strong></div>
+          <div><span data-i18n="recordEvictions">Εξώσεις</span><strong>0</strong></div>
+          <div><span data-i18n="recordArrears">Καθυστερήσεις ενοικίου</span><strong data-i18n="notDepartment">Δεν είναι το τμήμα μου</strong></div>
         </div>
       </div>
     </section>
 
     <section class="routine section-shell">
       <div class="routine-copy reveal">
-        <p class="eyebrow">Η ΚΑΘΗΜΕΡΙΝΗ ΡΟΥΤΙΝΑ</p>
-        <h2>Επαγγελματικά πρότυπα, απ' ό,τι φαίνεται.</h2>
+        <p class="eyebrow" data-i18n="routineEyebrow">Η ΚΑΘΗΜΕΡΙΝΗ ΡΟΥΤΙΝΑ</p>
+        <h2 data-i18n="routineTitle">Επαγγελματικά πρότυπα, απ' ό,τι φαίνεται.</h2>
         <ul class="check-list">
-          <li>Πλήρως εμβολιασμένος, με τα εμβόλια πάντα ενημερωμένα</li>
-          <li>Αποπαρασίτωση σε τακτική βάση κάθε χρόνο</li>
-          <li>Κόψιμο νυχιών κάθε εβδομάδα</li>
-          <li>Δικό του ονυχοδρόμιο και ξεχωριστό σημείο φαγητού</li>
-          <li>Ετήσιο καλοκαιρινό μπάνιο και τακτική περιποίηση</li>
-          <li>Αποκλειστικά γάτος εσωτερικού χώρου</li>
+          <li data-i18n="routine1">Πλήρως εμβολιασμένος, με τα εμβόλια πάντα ενημερωμένα</li>
+          <li data-i18n="routine2">Αποπαρασίτωση σε τακτική βάση κάθε χρόνο</li>
+          <li data-i18n="routine3">Κόψιμο νυχιών κάθε εβδομάδα</li>
+          <li data-i18n="routine4">Δικό του ονυχοδρόμιο και ξεχωριστό σημείο φαγητού</li>
+          <li data-i18n="routine5">Ετήσιο καλοκαιρινό μπάνιο και τακτική περιποίηση</li>
+          <li data-i18n="routine6">Αποκλειστικά γάτος εσωτερικού χώρου</li>
         </ul>
-        <div class="joke-note">
-          <span>🐾</span>
-          <p>Το μόνο πράγμα που ο Morpheus γρατζουνάει περιστασιακά είναι η άνθρωπός του. Τα έπιπλα έχουν γλιτώσει.</p>
-        </div>
+        <div class="joke-note"><span>🐾</span><p data-i18n="scratchJoke">Το μόνο πράγμα που ο Morpheus γρατζουνάει περιστασιακά είναι η άνθρωπός του. Τα έπιπλα έχουν γλιτώσει.</p></div>
       </div>
       <div class="routine-photo reveal reveal-delay">
-        <img src="https://raw.githubusercontent.com/michaelaspice/morpheus-profile/main/morpheus-stairs.jpeg" alt="Ο Morpheus κάθεται σε σκάλα με χαλί" />
-        <p>Πειστήριο Α: το χαλί παραμένει άθικτο.</p>
+        <img src="https://raw.githubusercontent.com/michaelaspice/morpheus-profile/main/morpheus-stairs.jpeg" alt="Morpheus sitting on carpeted stairs" />
+        <p data-i18n="stairsCaption">Πειστήριο Α: το χαλί παραμένει άθικτο.</p>
       </div>
     </section>
 
     <section class="gallery section-shell" aria-labelledby="gallery-title">
-      <div class="section-heading reveal">
-        <p class="eyebrow">ΦΩΤΟΓΡΑΦΙΚΑ ΣΤΟΙΧΕΙΑ</p>
-        <h2 id="gallery-title">Τεκμηριωμένο ιστορικό εξαιρετικής ομορφιάς.</h2>
-      </div>
+      <div class="section-heading reveal"><p class="eyebrow" data-i18n="galleryEyebrow">ΦΩΤΟΓΡΑΦΙΚΑ ΠΕΙΣΤΗΡΙΑ</p><h2 id="gallery-title" data-i18n="galleryTitle">Τεκμηριωμένο ιστορικό εξαιρετικής φωτογένειας.</h2></div>
       <div class="gallery-grid">
-        <figure class="gallery-item wide reveal"><img src="https://raw.githubusercontent.com/michaelaspice/morpheus-profile/main/morpheus-sunset.jpeg" alt="Ο Morpheus κοιτάζει το ηλιοβασίλεμα" /><figcaption>Τμήμα επιτήρησης της γειτονιάς.</figcaption></figure>
-        <figure class="gallery-item reveal"><img src="https://raw.githubusercontent.com/michaelaspice/morpheus-profile/main/morpheus-ball.jpeg" alt="Ο Morpheus κρατά το παιχνίδι του" /><figcaption>Προσωπικά αντικείμενα: μία μπάλα.</figcaption></figure>
-        <figure class="gallery-item reveal"><img src="https://raw.githubusercontent.com/michaelaspice/morpheus-profile/main/morpheus-paws.jpeg" alt="Ο Morpheus ξαπλωμένος με τις πατούσες ψηλά" /><figcaption>Κύρια απασχόληση: χαλάρωση.</figcaption></figure>
-        <figure class="gallery-item reveal"><img src="https://raw.githubusercontent.com/michaelaspice/morpheus-profile/main/morpheus-grass.jpeg" alt="Ο Morpheus κάθεται στο γρασίδι" /><figcaption>Έξοδος μόνο υπό επίβλεψη.</figcaption></figure>
-        <figure class="gallery-item reveal"><img src="https://raw.githubusercontent.com/michaelaspice/morpheus-profile/main/morpheus-formal.jpeg" alt="Ο Morpheus φορά κόκκινο πουλόβερ" /><figcaption>Επίσημη ενδυμασία διαθέσιμη κατόπιν αιτήματος.</figcaption></figure>
-        <figure class="gallery-item wide reveal"><img src="https://raw.githubusercontent.com/michaelaspice/morpheus-profile/main/morpheus-bed.jpeg" alt="Ο Morpheus χαλαρώνει σε λευκά σεντόνια" /><figcaption>Μαλακά έπιπλα: άθικτα.</figcaption></figure>
+        <figure class="gallery-item wide reveal"><img src="https://raw.githubusercontent.com/michaelaspice/morpheus-profile/main/morpheus-sunset.jpeg" alt="Morpheus watching the sunset" /><figcaption data-i18n="capBird">Τμήμα επιτήρησης γειτονιάς.</figcaption></figure>
+        <figure class="gallery-item reveal"><img src="https://raw.githubusercontent.com/michaelaspice/morpheus-profile/main/morpheus-ball.jpeg" alt="Morpheus holding his toy" /><figcaption data-i18n="capToy">Προσωπική περιουσία: μία μπάλα.</figcaption></figure>
+        <figure class="gallery-item reveal"><img src="https://raw.githubusercontent.com/michaelaspice/morpheus-profile/main/morpheus-paws.jpeg" alt="Morpheus relaxing" /><figcaption data-i18n="capRelax">Κύριο επάγγελμα: χαλάρωση.</figcaption></figure>
+        <figure class="gallery-item reveal"><img src="https://raw.githubusercontent.com/michaelaspice/morpheus-profile/main/morpheus-grass.jpeg" alt="Morpheus on grass" /><figcaption data-i18n="capOutside">Εμφανίσεις σε εξωτερικό χώρο μόνο με επίβλεψη.</figcaption></figure>
+        <figure class="gallery-item reveal"><img src="https://raw.githubusercontent.com/michaelaspice/morpheus-profile/main/morpheus-formal.jpeg" alt="Morpheus wearing a red sweater" /><figcaption data-i18n="capFormal">Επίσημο ένδυμα διαθέσιμο κατόπιν αιτήματος.</figcaption></figure>
+        <figure class="gallery-item wide reveal"><img src="https://raw.githubusercontent.com/michaelaspice/morpheus-profile/main/morpheus-bed.jpeg" alt="Morpheus relaxing on bedding" /><figcaption data-i18n="capHome">Μαλακά έπιπλα: άθικτα.</figcaption></figure>
       </div>
     </section>
 
     <section class="closing section-shell reveal">
       <div class="closing-card">
-        <img src="https://raw.githubusercontent.com/michaelaspice/morpheus-profile/main/morpheus-closeup.jpeg" alt="Κοντινό πορτρέτο του Morpheus" />
-        <div class="closing-copy">
-          <p class="eyebrow">ΚΑΙ ΚΑΤΙ ΤΕΛΕΥΤΑΙΟ</p>
-          <h2>Δεν είναι απλώς κατοικίδιο. Είναι οικογένεια.</h2>
-          <p>Καταλαβαίνω ότι η αποδοχή ενός ζώου σε ενοικιαζόμενο σπίτι απαιτεί εμπιστοσύνη. Ο Morpheus έχει μεγαλώσει με σαφή όρια και σταθερή ρουτίνα και αναλαμβάνω πλήρως την ευθύνη ώστε το επόμενο σπίτι μας να φροντίζεται με την ίδια προσοχή όπως όλα τα προηγούμενα.</p>
-          <a class="btn btn-primary" href="Morpheus-Tenant-CV-GR.html" target="_blank" rel="noopener">
-            <span>Ανοίξτε το CV του Morpheus</span>
-            <span aria-hidden="true">↗</span>
-          </a>
-        </div>
+        <img src="https://raw.githubusercontent.com/michaelaspice/morpheus-profile/main/morpheus-closeup.jpeg" alt="Close-up portrait of Morpheus" />
+        <div class="closing-copy"><p class="eyebrow" data-i18n="closingEyebrow">ΚΑΤΙ ΤΕΛΕΥΤΑΙΟ</p><h2 data-i18n="closingTitle">Δεν είναι απλώς κατοικίδιο. Είναι οικογένεια.</h2><p data-i18n="closingText">Καταλαβαίνω ότι η αποδοχή ενός ζώου σε ενοικιαζόμενο σπίτι απαιτεί εμπιστοσύνη. Ο Morpheus έχει μεγαλώσει με σαφείς κανόνες και σταθερή ρουτίνα, και αναλαμβάνω πλήρως την ευθύνη ώστε το επόμενο σπίτι μας να φροντίζεται με την ίδια προσοχή όπως όλα τα προηγούμενα.</p><a class="btn btn-primary" href="Morpheus-Tenant-CV-GR.html" target="_blank" rel="noopener"><span data-i18n="downloadCv">Ανοίξτε το βιογραφικό του Morpheus</span><span aria-hidden="true">↗</span></a></div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="section-shell footer-inner">
-      <span>🐾 Morpheus · 2026</span>
-      <span>Για ιδιοκτήτες που εκτιμούν τους εξαιρετικούς ενοίκους.</span>
-    </div>
-  </footer>
-
+  <footer><div class="section-shell footer-inner"><span>🐾 Morpheus · 2026</span><span data-i18n="footer">Δημιουργήθηκε για ιδιοκτήτες που εκτιμούν εξαιρετικούς ενοίκους.</span></div></footer>
   <script src="script.js"></script>
 </body>
 </html>
